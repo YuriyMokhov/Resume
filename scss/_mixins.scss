@@ -1,0 +1,22 @@
+@mixin inner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin hover-on-link {
+    transform: scale(1.1);
+}
+
+@mixin about-me-input-styles {
+    opacity: 0.8;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    font-style: italic;
+    color: $secondary-text-color;
+    &::placeholder {
+        padding-left: 10px;
+    }
+}
