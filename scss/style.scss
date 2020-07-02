@@ -39,23 +39,50 @@ $cloud-breakpoint-width: 1000px;
             height: 100%;
 
             .nav {
+                position: fixed;
+                top: -3px;
+                z-index: 5;
+                border-radius: 50%;
+                background-color: $background-color;
+                box-shadow: 0 0 15px $background-color;
+                // min-height: 100px;
+                border: 2px solid white;
                 flex: 0 0 55px;
-                padding: 5px;
+                padding: 15px;
                 margin-top: -10px;
+
+                &.full {
+                    border-radius: 10px;
+                }
                 //  border: 1px solid green;
                 .nav__link {
                     //  border: 1px solid blue;
-                    display: inline-flex;
-                    flex-direction: column;
+
                     transition: all 0.2s;
+                    width: 50px;
+                    height: 50px;
+
+                    display: flex;
+                    flex-direction: column;
                     .nav__link-span {
-                        flex: 0 0 auto;
-                        width: 55px;
-                        height: 5px;
+                        flex: 0 0 calc(40% / 3);
                         background-color: $red-color;
-                        margin-bottom: 8px;
-                        &:last-child {
-                            margin-bottom: 0;
+                        margin-top: 10%;
+                        margin-bottom: 10%;
+                    }
+
+                    &.cross {
+                        padding-top: 10px;
+                        .nav__link-span {
+                            &:first-child {
+                                transform: rotate(45deg) translate(25%, 175%);
+                            }
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                            &:last-child {
+                                transform: rotate(135deg);
+                            }
                         }
                     }
 
@@ -64,6 +91,26 @@ $cloud-breakpoint-width: 1000px;
                     }
                 }
             }
+
+            .header__menu {
+                display: none;
+                &.active {
+                    display: block;
+                    li a {
+                        font-family: "Raleway", sans-serif;
+                        font-size: 22px;
+                        line-height: 32px;
+                        font-weight: 500;
+                        color: #ffffff;
+                        transition: all 0.2s;
+                        &:hover {
+                            @include hover-on-link;
+                            color: $red-color;
+                        }
+                    }
+                }
+            }
+
             .header__fake-block {
                 flex: 1 1 auto;
             }
@@ -169,7 +216,7 @@ $cloud-breakpoint-width: 1000px;
         background-color: #f9f9f9;
         @media (max-width: $medium-width) {
             //  border: 1px solid blue;
-            padding: 0;
+            padding: 55px 0 0 0;
         }
 
         .about-me__row {
@@ -362,12 +409,6 @@ $cloud-breakpoint-width: 1000px;
                     margin: 20px 20px 20px 40px;
                 }
                 transition: all 0.2s;
-                &:hover {
-                    //  border: 2px solid $background-color;
-
-                    border-left: 2px solid transparent;
-                    border-right: 2px solid transparent;
-                }
 
                 .cloud-position {
                     font-family: "Raleway", sans-serif;
@@ -414,7 +455,7 @@ $cloud-breakpoint-width: 1000px;
     .work-experience {
         padding: 75px 0 85px 0;
         @media (max-width: 1100px) {
-            padding: 55px 0 0 0;
+            padding: 62px 0 0 0;
         }
         .work-experience__title {
         }
@@ -449,9 +490,6 @@ $cloud-breakpoint-width: 1000px;
     }
     background-color: $background-color;
     padding: 60px 0;
-    @media (max-width: 1100px) {
-        padding: 50px 0;
-    }
 
     .skills__title {
         color: $primary-text-color;
@@ -459,7 +497,7 @@ $cloud-breakpoint-width: 1000px;
         @media (max-width: 1100px) {
             margin-bottom: 30px;
         }
-        @media (max-width: 767px) {
+        @media (max-width: $medium-width) {
             margin-bottom: 20px;
         }
     }
@@ -476,7 +514,7 @@ $cloud-breakpoint-width: 1000px;
                 max-width: 50%;
                 padding: 15px 15px;
             }
-            @media (max-width: 767px) {
+            @media (max-width: $medium-width) {
                 flex: 1 1 100%;
                 max-width: 100%;
                 padding: 10px 15px;
@@ -555,7 +593,7 @@ $cloud-breakpoint-width: 1000px;
     padding: 80px 0;
     @media (max-width: 1000px) {
         flex: 1 1 100%;
-        padding: 40px 0;
+        padding: 55px 0;
     }
     .hire-me__title {
         font-family: "Raleway", sans-serif;
