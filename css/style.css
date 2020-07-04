@@ -1005,7 +1005,7 @@ h6 {
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hire-me__about-location::before {
-  background-image: url(/img/home_1741.png);
+  background-image: url(../img/home_1741.png);
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hire-me__about-email .hire-me__email-text a {
@@ -1013,7 +1013,7 @@ h6 {
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hire-me__about-email::before {
-  background-image: url(/img/mail_2_1739.png);
+  background-image: url(../img/mail_2_1739.png);
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hire-me__about-phone .hire-me__phone-text {
@@ -1021,7 +1021,7 @@ h6 {
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hire-me__about-phone::before {
-  background-image: url(/img/phone_2_1740.png);
+  background-image: url(../img/phone_2_1740.png);
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hier-me_about-set {
