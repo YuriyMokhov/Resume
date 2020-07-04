@@ -451,7 +451,7 @@ h6 {
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-height: 538px;
-  padding: 5px;
+  padding: 10px;
 }
 
 @media (max-width: 767px) {
@@ -468,8 +468,8 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px #353541;
-          box-shadow: 0 0 5px #353541;
+  -webkit-box-shadow: 0 0 10px #353541;
+          box-shadow: 0 0 10px #353541;
   -o-object-position: right;
      object-position: right;
 }
