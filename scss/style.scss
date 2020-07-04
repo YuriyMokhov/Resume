@@ -221,7 +221,7 @@ $cloud-breakpoint-width: 1000px;
         background-color: #f9f9f9;
         @media (max-width: $medium-width) {
             //  border: 1px solid blue;
-            padding: 55px 0 0 0;
+            padding: 35px 0 0 0;
         }
 
         .about-me__row {
@@ -249,6 +249,10 @@ $cloud-breakpoint-width: 1000px;
                     padding: 0 20px 0 0;
                 }
                 .about-me__list {
+                    margin: 0 0 5px 0;
+                    @media (max-width: $medium-width) {
+                        margin: 0 0 15px 0;
+                    }
                     dl {
                         background-color: #ffffff;
                         display: inline-block;
@@ -259,7 +263,7 @@ $cloud-breakpoint-width: 1000px;
                             display: inline-block;
                             font-family: "Raleway", sans-serif;
                             font-size: 18px;
-                            line-height: 50px;
+                            line-height: 30px;
                             font-weight: 600;
                             color: $secondary-text-color;
                         }
@@ -268,7 +272,7 @@ $cloud-breakpoint-width: 1000px;
 
                             font-family: "Raleway", sans-serif;
                             font-size: 18px;
-                            line-height: 50px;
+                            line-height: 30px;
                             font-weight: 500;
                             color: $secondary-text-color;
                             //  border-bottom: 1px solid $background-color;
@@ -371,7 +375,7 @@ $cloud-breakpoint-width: 1000px;
 
             .mark {
                 flex: 0 0 42px;
-                width: 42px;
+                //  width: 42px;
                 height: 42px;
                 border: 2px solid #000000;
                 border-radius: 50%;
@@ -398,7 +402,7 @@ $cloud-breakpoint-width: 1000px;
                     content: "";
                     top: -40px;
                     left: 18px;
-                    height: 500px;
+                    height: 540px;
                     width: 1px;
                     z-index: -1;
                     background-color: $background-color;
@@ -461,7 +465,7 @@ $cloud-breakpoint-width: 1000px;
     .work-experience {
         padding: 75px 0 85px 0;
         @media (max-width: 1100px) {
-            padding: 62px 0 0 0;
+            padding: 50px 0 0 0;
         }
         .work-experience__title {
         }
@@ -478,6 +482,10 @@ $cloud-breakpoint-width: 1000px;
                     .work-experience__cloud-position {
                         span {
                             padding-left: 20px;
+                            @media (max-width: $cloud-breakpoint-width) {
+                                display: block;
+                                padding-left: 0;
+                            }
                         }
                     }
                     .work-experience__cloud-dates {
@@ -728,10 +736,15 @@ $cloud-breakpoint-width: 1000px;
                         content: "";
                         position: absolute;
                         left: -60px;
-                        top: 22px;
+                        top: 15px;
                         z-index: 3;
                         height: 32px;
                         width: 32px;
+
+                        @media (max-width: $medium-width) {
+                            left: -40px;
+                            top: 15px;
+                        }
                     }
                 }
 

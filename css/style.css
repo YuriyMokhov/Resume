@@ -350,7 +350,7 @@ h6 {
 
 @media (max-width: 767px) {
   .wrapper .about-me {
-    padding: 55px 0 0 0;
+    padding: 35px 0 0 0;
   }
 }
 
@@ -404,6 +404,16 @@ h6 {
   padding: 0 20px 0 0;
 }
 
+.wrapper .about-me .about-me__row .about-me__body .about-me__list {
+  margin: 0 0 5px 0;
+}
+
+@media (max-width: 767px) {
+  .wrapper .about-me .about-me__row .about-me__body .about-me__list {
+    margin: 0 0 15px 0;
+  }
+}
+
 .wrapper .about-me .about-me__row .about-me__body .about-me__list dl {
   background-color: #ffffff;
   display: inline-block;
@@ -414,7 +424,7 @@ h6 {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 30px;
   font-weight: 600;
   color: #3e3e3e;
 }
@@ -423,7 +433,7 @@ h6 {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 30px;
   font-weight: 500;
   color: #3e3e3e;
 }
@@ -553,7 +563,6 @@ h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 42px;
           flex: 0 0 42px;
-  width: 42px;
   height: 42px;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -581,7 +590,7 @@ h6 {
   content: "";
   top: -40px;
   left: 18px;
-  height: 500px;
+  height: 540px;
   width: 1px;
   z-index: -1;
   background-color: #353541;
@@ -646,7 +655,7 @@ h6 {
 
 @media (max-width: 1100px) {
   .wrapper .work-experience {
-    padding: 62px 0 0 0;
+    padding: 50px 0 0 0;
   }
 }
 
@@ -662,6 +671,13 @@ h6 {
 
 .wrapper .work-experience .work-experience__graph .work-experience__cloud-row .work-experience__cloud .work-experience__cloud-position span {
   padding-left: 20px;
+}
+
+@media (max-width: 1000px) {
+  .wrapper .work-experience .work-experience__graph .work-experience__cloud-row .work-experience__cloud .work-experience__cloud-position span {
+    display: block;
+    padding-left: 0;
+  }
 }
 
 .skills {
@@ -786,7 +802,7 @@ h6 {
   opacity: 0.8;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 50px;
   font-weight: 500;
   font-style: italic;
   color: #3e3e3e;
@@ -819,7 +835,7 @@ h6 {
   opacity: 0.8;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 50px;
   font-weight: 500;
   font-style: italic;
   color: #3e3e3e;
@@ -1021,10 +1037,17 @@ h6 {
   content: "";
   position: absolute;
   left: -60px;
-  top: 22px;
+  top: 15px;
   z-index: 3;
   height: 32px;
   width: 32px;
+}
+
+@media (max-width: 767px) {
+  .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hier-me_about-set::before {
+    left: -40px;
+    top: 15px;
+  }
 }
 
 .hire-me .hire-me__row .hire-me__about-me-wrapper .hire-me__about-me .hire-me__text {
