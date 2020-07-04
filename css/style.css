@@ -276,8 +276,8 @@ h6 {
 }
 
 .wrapper .header .header__flex-row .header__body .header__fio:hover {
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
 }
 
 .wrapper .header .header__flex-row .header__body .header__status {
